@@ -1,0 +1,54 @@
+* {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.scheduleHolder {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hourSpace {
+    text-align: left;
+    width: 800px;
+}
+
+.meetingSpace {
+    margin-left: 10%;
+    margin-right: 20%;
+    border: solid 1px lightgreen;
+}
+
+.bufferSpace {
+    display: flex-end;
+    border: solid 2px lightgreen;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.meetingInfoSpace {
+    border: solid 1px lightblue;
+    height: 100px;
+    margin: 5px;
+    text-align: left;
+    font-size: large;
+}
+
+.redBufferSpace {
+    background-color: rgba(187, 56, 56, 0.753);
+    display: flex-end;
+    border: solid 2px lightgreen;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.yellowBufferSpace {
+    background-color: rgba(232, 235, 98, 0.76);
+    display: flex-end;
+    border: solid 2px lightgreen;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
