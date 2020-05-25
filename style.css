@@ -33,12 +33,13 @@
     margin: 5px;
     text-align: left;
     font-size: large;
+    overflow: hidden;
 }
 
 .redBufferSpace {
     background-color: rgba(187, 56, 56, 0.753);
     display: flex-end;
-    border: solid 2px lightgreen;
+    border: solid 2px rgba(187, 56, 56, 0.753);
     border-radius: 8px;
     padding: 5px;
     margin: 5px;
@@ -46,9 +47,18 @@
 
 .yellowBufferSpace {
     background-color: rgba(232, 235, 98, 0.76);
-    display: flex-end;
-    border: solid 2px lightgreen;
+    
+    border: solid 2px rgba(232, 235, 98, 0.76);
     border-radius: 8px;
     padding: 5px;
     margin: 5px;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+button {
+    display: flex-end;
 }
