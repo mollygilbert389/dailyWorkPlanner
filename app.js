@@ -1,10 +1,15 @@
 $(document).ready(function(){
-    let currentDayofWeek = moment().format("[Today is] dddd")
+    let currentDayofWeek = moment().format("[Today is] MMMM Do YYYY, h:mm a")
     let currentTime = moment().format('h:mm a')
 
     let dailyPlannerTimes = ['08:00 am', '09:00 am', '10:00 am', '11:00 am', "12:00 pm", '1:00 pm', '2:00pm', '3:00pm', '4:00 pm', '5:00pm']
 
+
+    $('#currentDate').append(currentDayofWeek)
+
     for (i=0;i<dailyPlannerTimes.length;i++) {
+
+
         if (currentTime > dailyPlannerTimes[i]) {
             newDailyPlannerSpace = $('<div>')
             outerBox = $('<div>')
