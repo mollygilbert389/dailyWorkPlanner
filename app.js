@@ -9,7 +9,6 @@ $(document).ready(function(){
 
     for (i=0;i<dailyPlannerTimes.length;i++) {
 
-
         if (currentTime > dailyPlannerTimes[i]) {
             newDailyPlannerSpace = $('<div>')
             outerBox = $('<div>')
@@ -20,7 +19,9 @@ $(document).ready(function(){
             newTimes = $('<input>')
             newTimes.attr('placeholder', 'Add Plans here')
             meetingTextSpace.addClass('meetingInfoSpace')
+
             outerBox.addClass('redBufferSpace')
+            
             outerBox.attr('value', dailyPlannerTimes[i])
             outerBox.append(dailyPlannerTimes[i])
             outerBox.append(meetingTextSpace)
@@ -28,7 +29,6 @@ $(document).ready(function(){
             newTimes.addClass('hourSpace')
             newDailyPlannerSpace.append(outerBox)
             $('#meetingSpaces').append(newDailyPlannerSpace)
-
             
         } else {
             newDailyPlannerSpace = $('<div>')
